@@ -18,28 +18,36 @@ body {
 }
 
 .wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-top: 30px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+
 }
 
 header {
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+padding-top: 1px;
+  font-size: x-large;
+  color: white;
+  background-image: url(assets/images/pawel-czerwinski-_GVV5SViV2E-unsplash.jpg);
+  width: 100%;
+  height: 100px;
+
+
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: black;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color:white;
   font-size: 18px;
+  text-align: center;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  margin-top: 40px;
 }
 
 .card-header::after {
@@ -74,11 +82,11 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: white;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: black;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -135,3 +143,12 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+.footer {
+  background-image: url(assets/images/pawel-czerwinski-_GVV5SViV2E-unsplash.jpg);
+  width: 100%;
+  height: 75px;
+  
+
+}
+
