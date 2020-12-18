@@ -7,8 +7,9 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
+
+// generating the password
 function generatePassword() {
   var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -17,6 +18,7 @@ function generatePassword() {
   var restart = true
   var LengthOfPassword
 
+  //establishing length of password
   while (restart) {
     LengthOfPassword = prompt('How long do you want your password to be? 8-128 charachers')
     if (LengthOfPassword < 8 || LengthOfPassword > 128) {
@@ -27,18 +29,23 @@ function generatePassword() {
       restart = false;
     }
   }
+  // user questions
   var tiny = confirm("Do you want any lowercase letters in your password?")
   var large = confirm('Do you want any uppercase letters in your password?')
   var digit = confirm('Do you want any numbers in your password?')
   var asterik = confirm('Do you want any special characters in your password?')
   var password2 = []
 
+  //creating variables to use with random selection of index number
   var smallLetter
   var Capital
   var tally
   var dollarSign
+
+  //variable to count number of characters selected
   var count = 0
 
+  // generate index of arrays to select coordingating letter/number/character
   while (count < LengthOfPassword) {
 
     if (tiny) {
@@ -61,18 +68,16 @@ function generatePassword() {
       password2.push(special[dollarSign]);
       count++;
     }
-
+    
   }
   
-return password2;
+  // return contents of password2 array 
+return password2.join("");
 
 }
-
-
-
-
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
 
 
