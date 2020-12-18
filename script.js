@@ -52,21 +52,33 @@ function generatePassword() {
       smallLetter = Math.floor(Math.random() * lowerCase.length);
       password2.push(lowerCase[smallLetter]);
       count++;
+        if (count >= LengthOfPassword){
+          break;
+        }
     }
     if (large) {
       Capital = Math.floor(Math.random() * upperCase.length);
       password2.push(upperCase[Capital]);
       count++;
+      if (count >= LengthOfPassword){
+        break;
+      }
     }
     if (digit) {
       tally = Math.floor(Math.random() * num.length);
       password2.push(num[tally]);
       count++;
+      if (count >= LengthOfPassword){
+        break;
+      }
     }
     if (asterik) {
       dollarSign = Math.floor(Math.random() * special.length);
       password2.push(special[dollarSign]);
       count++;
+      if (count >= LengthOfPassword){
+        break;
+      }
     }
     
   }
