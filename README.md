@@ -15,5 +15,5 @@ The artwork for this project was downloaded at https://unsplash.com/photos/DDIjE
 The creator would also like to acknowledge support by Ty Sellars and Lexi Cobb during the creation of this project.  
 
 ***
-The project is located at https://cobbstop42.Secure Password Generator
+The project is located at https://cobbstop42.github.io/Secure-Password-Generator/
 ***
